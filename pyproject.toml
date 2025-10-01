@@ -1,0 +1,9 @@
+[project]
+name = "perfectscreen"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "django>=5.2.7",
+    "pillow>=11.3.0",
+]

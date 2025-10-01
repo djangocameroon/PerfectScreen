@@ -1,0 +1,34 @@
+[
+  {
+    "username": "johndoe",
+    "platform": "Twitter",
+    "screenshot": "images/community-twitter.jpg",
+    "post_url": "https://twitter.com/johndoe/status/123456789",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "janedoe",
+    "platform": "LinkedIn",
+    "screenshot": "images/teamwork-linkedin.jpg",
+    "post_url": "https://linkedin.com/posts/janedoe-activity-123456789",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "devteam",
+    "platform": "Twitter",
+    "screenshot": "images/developers-twitter.jpg",
+    "post_url": "https://twitter.com/devteam/status/987654321",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "codemaster",
+    "platform": "LinkedIn",
+    "screenshot": "images/coding-linkedin.jpg",
+    "post_url": "https://linkedin.com/posts/codemaster-activity-987654321",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  }
+]

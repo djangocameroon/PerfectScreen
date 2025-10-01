@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Perfect Screen | Django Cameroon Hacktoberfest 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hack-navy': '#1C1C3F',
+                        'hack-purple': '#5A5AB5',
+                        'hack-lavender': '#C2C2FF',
+                        'hack-dark-purple': '#403F7D',
+                        'hack-periwinkle': '#A0A0FF',
+                    },
+                    fontFamily: {
+                        'atkinson': ['Atkinson Hyperlegible', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            background: linear-gradient(135deg, #1C1C3F 0%, #2a2a5e 30%, #403F7D 60%, #1C1C3F 100%);
+            background-attachment: fixed;
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(194, 194, 255, 0.5), 0 0 40px rgba(194, 194, 255, 0.3);
+        }
+        .gallery-item {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-8px);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .modal.active {
+            display: flex;
+        }
+        .modal-content {
+            animation: modalFadeIn 0.3s ease-out;
+        }
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen bg-hack-navy">
+    <nav class="py-6 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="{% url 'posts:home' %}" class="text-2xl font-bold text-hack-lavender hover:text-hack-periwinkle transition-colors">
+                Perfect Screen
+            </a>
+            <div class="flex gap-6">
+                <a href="{% url 'posts:home' %}" class="text-lg text-hack-periwinkle hover:text-hack-lavender transition-colors">
+                    Home
+                </a>
+                <a href="{% url 'posts:gallery' %}" class="text-lg text-hack-lavender font-bold">
+                    Gallery
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-16">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 text-hack-lavender glow-text">
+                Community Gallery
+            </h1>
+            <p class="text-xl md:text-2xl text-hack-periwinkle">
+                Explore all submissions from our amazing community
+            </p>
+        </header>
+
+        {% if page_obj %}
+        <section class="mb-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                {% for post in page_obj %}
+                <div class="gallery-item bg-hack-dark-purple rounded-xl overflow-hidden shadow-lg border-2 border-hack-purple hover:border-hack-periwinkle"
+                     onclick="openModal('{{ post.screenshot.url }}', '{{ post.username }}', '{{ post.platform }}', '{{ post.post_url }}', {% if post.has_tagged_digitalocean %}true{% else %}false{% endif %}, {% if post.has_starred_repo %}true{% else %}false{% endif %})">
+                    <img src="{{ post.screenshot.url }}"
+                         alt="{{ post.username }}'s post"
+                         class="w-full h-72 object-cover"
+                         loading="lazy">
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-2">
+                            <p class="font-bold text-lg">@{{ post.username }}</p>
+                            <span class="text-xs bg-hack-purple px-2 py-1 rounded">{{ post.platform }}</span>
+                        </div>
+                        <div class="flex gap-2 text-xs mb-3">
+                            {% if post.has_tagged_digitalocean %}
+                            <span class="bg-hack-purple px-2 py-1 rounded font-bold">Tagged DO</span>
+                            {% endif %}
+                            {% if post.has_starred_repo %}
+                            <span class="bg-hack-periwinkle text-hack-navy px-2 py-1 rounded font-bold">Starred</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if page_obj.has_other_pages %}
+            <div class="flex justify-center gap-2 flex-wrap">
+                {% if page_obj.has_previous %}
+                <a href="?page=1" class="px-4 py-2 bg-hack-purple rounded-lg hover:bg-hack-periwinkle transition-colors">First</a>
+                <a href="?page={{ page_obj.previous_page_number }}" class="px-4 py-2 bg-hack-purple rounded-lg hover:bg-hack-periwinkle transition-colors">Previous</a>
+                {% endif %}
+
+                <span class="px-4 py-2 bg-hack-dark-purple rounded-lg border-2 border-hack-lavender">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                </span>
+
+                {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}" class="px-4 py-2 bg-hack-purple rounded-lg hover:bg-hack-periwinkle transition-colors">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}" class="px-4 py-2 bg-hack-purple rounded-lg hover:bg-hack-periwinkle transition-colors">Last</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </section>
+        {% else %}
+        <div class="text-center py-20">
+            <p class="text-2xl text-hack-lavender">No posts yet. Be the first to contribute!</p>
+        </div>
+        {% endif %}
+
+        <footer class="mt-20 text-center text-hack-lavender">
+            <p class="text-lg mb-2">Django Cameroon x Hacktoberfest 2025</p>
+            <p class="text-sm">Built with Django, TailwindCSS, and open-source love</p>
+        </footer>
+    </div>
+
+    <div id="imageModal" class="modal items-center justify-center" onclick="closeModal(event)">
+        <div class="modal-content max-w-5xl w-full mx-4">
+            <div class="bg-hack-dark-purple rounded-2xl overflow-hidden border-4 border-hack-purple relative">
+                <button onclick="closeModal(event)" class="absolute top-4 right-4 z-50 bg-hack-navy hover:bg-hack-purple text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold transition-colors">
+                    &times;
+                </button>
+                <img id="modalImage" src="" alt="" class="w-full max-h-[80vh] object-contain">
+                <div class="p-6 bg-gradient-to-t from-hack-navy to-hack-dark-purple">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p id="modalUsername" class="text-2xl font-bold text-hack-lavender"></p>
+                            <p id="modalPlatform" class="text-lg text-hack-periwinkle"></p>
+                        </div>
+                        <div id="modalBadges" class="flex gap-2"></div>
+                    </div>
+                    <a id="modalLink" href="#" target="_blank" class="block w-full text-center bg-hack-purple hover:bg-hack-periwinkle text-white font-bold py-3 px-6 rounded-lg transition-colors text-lg">
+                        View Original Post
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageUrl, username, platform, postUrl, hasTaggedDO, hasStarred) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalUsername = document.getElementById('modalUsername');
+            const modalPlatform = document.getElementById('modalPlatform');
+            const modalLink = document.getElementById('modalLink');
+            const modalBadges = document.getElementById('modalBadges');
+
+            modalImage.src = imageUrl;
+            modalImage.alt = username + "'s post";
+            modalUsername.textContent = '@' + username;
+            modalPlatform.textContent = platform;
+            modalLink.href = postUrl;
+
+            modalBadges.innerHTML = '';
+            if (hasTaggedDO) {
+                modalBadges.innerHTML += '<span class="bg-green-600 px-3 py-1 rounded-full text-sm font-bold">Tagged DO</span>';
+            }
+            if (hasStarred) {
+                modalBadges.innerHTML += '<span class="bg-yellow-600 px-3 py-1 rounded-full text-sm font-bold">Starred</span>';
+            }
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            if (event.target.id === 'imageModal' || event.target.tagName === 'BUTTON') {
+                event.stopPropagation();
+                const modal = document.getElementById('imageModal');
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modal = document.getElementById('imageModal');
+                if (modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
