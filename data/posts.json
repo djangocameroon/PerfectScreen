@@ -40,6 +40,14 @@
     "has_starred_repo": true
   },
   {
+    "username": "IvanTomdieu",
+    "platform":"Twitter",
+    "screenshot": "images/IvanTomdieu-twitter.png",
+    "post_url":"https://x.com/IvanTomdieu/status/1973771943502610769",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
     "username": "joelfah",
     "platform": "LinkedIn",
     "screenshot": "images/joel-fah-linkedin.png",
