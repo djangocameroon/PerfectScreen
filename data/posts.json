@@ -30,5 +30,13 @@
     "post_url": "https://linkedin.com/posts/codemaster-activity-987654321",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
+  },
+  {
+    "username": "IvanTomdieu",
+    "platform":"Twitter",
+    "screenshot": "images/IvanTomdieu-twitter.png",
+    "post_url":"https://x.com/IvanTomdieu/status/1973771943502610769",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
   }
 ]
