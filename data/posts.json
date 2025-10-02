@@ -38,5 +38,13 @@
     "post_url":"https://x.com/IvanTomdieu/status/1973771943502610769",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
+  },
+  {
+    "username": "Edmond22-prog",
+    "platform":"Twitter",
+    "screenshot": "images/edmond22-prog-twitter.png",
+    "post_url":"https://x.com/EdmondMakolle/status/1973826296192119296",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
   }
 ]
