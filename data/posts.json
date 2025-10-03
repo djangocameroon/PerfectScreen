@@ -11,7 +11,15 @@
     "username": "Jean Marc Wogue Deffo",
     "platform": "LinkedIn",
     "screenshot": "images/hactober_marc.png",
-    "post_url": "https://www.linkedin.com/posts/jean-marc-wogue-deffo-562756383_hacktoberfest-djangocameroon-django-activity-7379558575649660928-OX4N?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6eBJoB1w_b-z8MGhyiFBod-EEZayXnVvo",
+    "post_url": "https://www.linkedin.com/posts/jean-marc-wogue-deffo-562756383_hacktoberfest-djangocameroon-django-activity-7379558575649660928-OX4N",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "Joel-Fah",
+    "platform": "X",
+    "screenshot": "images/joel-fah-x.png",
+    "post_url": "https://x.com/FahDejon/status/1973814119146103209",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
   },
@@ -36,6 +44,30 @@
     "platform": "LinkedIn",
     "screenshot": "images/coding-linkedin.jpg",
     "post_url": "https://linkedin.com/posts/codemaster-activity-987654321",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "IvanTomdieu",
+    "platform":"Twitter",
+    "screenshot": "images/IvanTomdieu-twitter.png",
+    "post_url":"https://x.com/IvanTomdieu/status/1973771943502610769",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "Edmond22-prog",
+    "platform":"Twitter",
+    "screenshot": "images/edmond22-prog-twitter.png",
+    "post_url":"https://x.com/EdmondMakolle/status/1973826296192119296",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "joelfah",
+    "platform": "LinkedIn",
+    "screenshot": "images/joel-fah-linkedin.png",
+    "post_url": "https://www.linkedin.com/posts/joelfah_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379582979460845568-1b-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQNGtkBDIlNeFSsshfB3PSsqKUdzX2ycBs",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
   }
