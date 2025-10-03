@@ -78,5 +78,13 @@
     "post_url": "https://x.com/mofirojean/status/1974005810519806451",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
+  },
+  {
+    "username": "charles-kamga",
+    "platform": "LinkedIn",
+    "screenshot": "images/charles-kamga-linkedin.png",
+    "post_url": "https://www.linkedin.com/posts/charles-kamga_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379824820139597826-uRI7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF4pwscBVizUFjcQdiiaouScEE0UutfqLSA",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
   }
 ]
