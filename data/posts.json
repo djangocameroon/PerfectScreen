@@ -8,6 +8,14 @@
     "has_starred_repo": true
   },
   {
+    "username": "Joel-Fah",
+    "platform": "X",
+    "screenshot": "images/joel-fah-x.png",
+    "post_url": "https://x.com/FahDejon/status/1973814119146103209",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
     "username": "janedoe",
     "platform": "LinkedIn",
     "screenshot": "images/teamwork-linkedin.jpg",
@@ -44,6 +52,14 @@
     "platform":"Twitter",
     "screenshot": "images/edmond22-prog-twitter.png",
     "post_url":"https://x.com/EdmondMakolle/status/1973826296192119296",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": "joelfah",
+    "platform": "LinkedIn",
+    "screenshot": "images/joel-fah-linkedin.png",
+    "post_url": "https://www.linkedin.com/posts/joelfah_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379582979460845568-1b-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQNGtkBDIlNeFSsshfB3PSsqKUdzX2ycBs",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
   }
