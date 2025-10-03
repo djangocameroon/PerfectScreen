@@ -48,6 +48,14 @@
     "has_starred_repo": true
   },
   {
+    "username": "Edmond22-prog",
+    "platform":"Twitter",
+    "screenshot": "images/edmond22-prog-twitter.png",
+    "post_url":"https://x.com/EdmondMakolle/status/1973826296192119296",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
     "username": "joelfah",
     "platform": "LinkedIn",
     "screenshot": "images/joel-fah-linkedin.png",
