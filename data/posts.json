@@ -67,7 +67,7 @@
     "username": "joelfah",
     "platform": "LinkedIn",
     "screenshot": "images/joel-fah-linkedin.png",
-    "post_url": "https://www.linkedin.com/posts/joelfah_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379582979460845568-1b-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQNGtkBDIlNeFSsshfB3PSsqKUdzX2ycBs",
+    "post_url": "https://www.linkedin.com/posts/joelfah_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379582979460845568-1b-X",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
   },
@@ -83,7 +83,7 @@
     "username": "charles-kamga",
     "platform": "LinkedIn",
     "screenshot": "images/charles-kamga-linkedin.png",
-    "post_url": "https://www.linkedin.com/posts/charles-kamga_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379824820139597826-uRI7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF4pwscBVizUFjcQdiiaouScEE0UutfqLSA",
+    "post_url": "https://www.linkedin.com/posts/charles-kamga_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7379824820139597826-uRI7",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
   },
@@ -100,6 +100,18 @@
     "platform": "Twitter",
     "screenshot": "images/nebadesmond-twitter.png",
     "post_url": "https://x.com/nebadesmondc/status/1974274325495660720",
+    "username": "freddy-choudja",
+    "platform": "X",
+    "screenshot": "images/freddy-choudja.png",
+    "post_url": "https://www.linkedin.com/posts/freddy-choudja-2a662a330_opensource-hacktoberfest2025-djangocameroonhack-activity-7380261583291215872-8ZyK",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  },
+  {
+    "username": " juvenal-sineng-kengni",
+    "platform": "LinkedIn", 
+    "screenshot": "images/Sineng-juvenal-linkedin.png",
+    "post_url": "https://www.linkedin.com/posts/juvenal-sineng-kengni_hacktoberfest-djangocameroonhack-hacktoberfest-activity-7380264476878467072-bPQA",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
   }
