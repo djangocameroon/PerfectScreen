@@ -114,5 +114,14 @@
     "post_url": "https://www.linkedin.com/posts/juvenal-sineng-kengni_hacktoberfest-djangocameroonhack-hacktoberfest-activity-7380264476878467072-bPQA",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
+  },
+  {
+  "username": "Fritz-Akam",
+  "platform": "Linkedin",
+  "screenshot": "images/fritz-akam-linkedin.jpeg",
+  "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7381226145817718784/",
+  "has_tagged_digitalocean": true,
+  "has_starred_repo": true
   }
+  
 ]
