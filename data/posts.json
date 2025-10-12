@@ -120,6 +120,12 @@
     "has_starred_repo": true
   },
   {
+  "username": "Fritz-Akam",
+  "platform": "Linkedin",
+  "screenshot": "images/fritz-akam-linkedin.jpeg",
+  "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7381226145817718784/",
+  },
+  {
   "username": "Tchinda-BL4Z3",
   "platform": "Linkeldin",
   "screenshot": "images/Tchinda-BL4Z3-platform.png",
@@ -127,4 +133,5 @@
   "has_tagged_digitalocean": true,
   "has_starred_repo": true
   }
+  
 ]
