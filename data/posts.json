@@ -100,9 +100,13 @@
     "platform": "Twitter",
     "screenshot": "images/nebadesmond-twitter.png",
     "post_url": "https://x.com/nebadesmondc/status/1974274325495660720",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+   },
+   {
     "username": "freddy-choudja",
-    "platform": "X",
-    "screenshot": "images/freddy-choudja.png",
+    "platform": "LinkedIn",
+    "screenshot": "images/freddy-choudja-linkedin.png",
     "post_url": "https://www.linkedin.com/posts/freddy-choudja-2a662a330_opensource-hacktoberfest2025-djangocameroonhack-activity-7380261583291215872-8ZyK",
     "has_tagged_digitalocean": true,
     "has_starred_repo": true
@@ -120,6 +124,12 @@
   "platform": "Linkedin",
   "screenshot": "images/fritz-akam-linkedin.jpeg",
   "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7381226145817718784/",
+  },
+  {
+  "username": "Tchinda-BL4Z3",
+  "platform": "Linkeldin",
+  "screenshot": "images/Tchinda-BL4Z3-platform.png",
+  "post_url": "https://www.linkedin.com/feed/update/urn:li:share:7380950735221497857/",
   "has_tagged_digitalocean": true,
   "has_starred_repo": true
   }
