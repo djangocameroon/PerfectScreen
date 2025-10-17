@@ -123,13 +123,21 @@
   "username": "Fritz-Akam",
   "platform": "Linkedin",
   "screenshot": "images/fritz-akam-linkedin.jpeg",
-  "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7381226145817718784/",
+  "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7381226145817718784/"
   },
   {
   "username": "Tchinda-BL4Z3",
   "platform": "Linkeldin",
   "screenshot": "images/Tchinda-BL4Z3-platform.png",
   "post_url": "https://www.linkedin.com/feed/update/urn:li:share:7380950735221497857/",
+  "has_tagged_digitalocean": true,
+  "has_starred_repo": true
+  },
+  {
+  "username": "Djomgoue-miguel-frank",
+  "platform": "Linkeldin",
+  "screenshot": "images/Djomgoue-miguel-frank-linkedin.png",
+  "post_url": "https://https://www.linkedin.com/posts/miguel-frank-djomgoue-787bab376_djangocameroonhack-hacktoberfest-djcmrhacktoberfest-activity-7384904347773677568-cPHS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF0U3JcBCrpnRNSpC-g1adCq1FvekWEIy_s",
   "has_tagged_digitalocean": true,
   "has_starred_repo": true
   }
