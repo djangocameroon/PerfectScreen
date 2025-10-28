@@ -132,6 +132,13 @@
   "post_url": "https://www.linkedin.com/feed/update/urn:li:share:7380950735221497857/",
   "has_tagged_digitalocean": true,
   "has_starred_repo": true
-  }
-  
+  },
+  {
+    "username": "NgapgueOfficial",
+    "platform": "Twitter",
+    "screenshot": "images/xiandev25-twitter.png",
+    "post_url": "https://x.com/NgapgueOfficial/status/1983127335567081637",
+    "has_tagged_digitalocean": true,
+    "has_starred_repo": true
+  }  
 ]
